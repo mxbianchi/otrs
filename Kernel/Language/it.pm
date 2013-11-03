@@ -721,8 +721,8 @@ sub Data {
         'Show the ticket history' => 'Mostra lo storico del ticket',
         'Print this ticket' => 'Stampa questo ticket',
         'Print this article' => 'Sampa questo articolo',
-        'Split' => 'Dividi',
-        'Split this article' => 'Dividi questo articolo',
+        'Split' => 'Duplica',
+        'Split this article' => 'Duplica questo articolo',
         'Forward article via mail' => 'Inoltra l\'articolo via email',
         'Change the ticket priority' => 'Cambia la priorità al ticket',
         'Change the ticket free fields!' => 'Cambia i campi liberi della richiesta!',
@@ -2426,8 +2426,8 @@ Nota: Questa tabella rappresenta l\'ordine di esecuzione delle ACL. Se è necess
         # Template: AgentTicketActionPopupClose
 
         # Template: AgentTicketBounce
-        'Bounce Ticket' => 'Rispedici Ticket',
-        'Bounce to' => 'Rispedisci a',
+        'Bounce Ticket' => 'Reindirizza Ticket',
+        'Bounce to' => 'Rindirizza a',
         'You need a email address.' => 'E\' necessario un indirizzo email.',
         'Need a valid email address or don\'t use a local email address.' =>
             'E\' necessario un indirizzo email valido o non usare un indirizzo email locale.',
@@ -3284,23 +3284,23 @@ Nota: Questa tabella rappresenta l\'ordine di esecuzione delle ACL. Se è necess
             'Definisce il corpo delle email di notifica inviate ai clienti, con token per la nuova password richiesta (dopo aver usato questo link la nuova password verrà inviata)',
         'Defines the body text for rejected emails.' => 'Definisce il corpo delle email rifiutate.',
         'Defines the boldness of the line drawed by the graph.' => 'Definisce lo spessore della linea disegnata dal grafico.',
-        'Defines the calendar width in percent. Default is 95%.' => '',
+        'Defines the calendar width in percent. Default is 95%.' => 'Definisce la larghezza del calendario in percentuale, per default al 95%.',
         'Defines the colors for the graphs.' => 'Definsice i colori per il grafico.',
         'Defines the column to store the keys for the preferences table.' =>
             'Definisce le colonne in cui memorizzare le chiavi per la tabella delle preferenze.',
-        'Defines the config options for the autocompletion feature.' => '',
+        'Defines the config options for the autocompletion feature.' => 'Definisce le opzioni di configurazione per la funzionalita di autocompletamento',
         'Defines the config parameters of this item, to be shown in the preferences view.' =>
             'Definsice i parametri di configurazione per questo oggetto, in modo che vengano mostrate nella schermata delle preferenze.',
         'Defines the config parameters of this item, to be shown in the preferences view. Take care to maintain the dictionaries installed in the system in the data section.' =>
             'Definsice i parametri di configurazione per questo oggetto, in modo che vengano mostrate nella schermata delle preferenze. Ricordarsi di mantenere i dizionari installati nel sistema nella sezione dati.',
-        'Defines the connections for http/ftp, via a proxy.' => '',
+        'Defines the connections for http/ftp, via a proxy.' => 'Definisce le connessioni http/ftp via proxy',
         'Defines the date input format used in forms (option or input fields).' =>
-            '',
-        'Defines the default CSS used in rich text editors.' => '',
+            'Definisce il formato di inserimento data utilizzato nei form (opzione o campo di inserimento)',
+        'Defines the default CSS used in rich text editors.' => 'Definisce il file CSS di default usato del Rich Text Editor',
         'Defines the default auto response type of the article for this operation.' =>
-            '',
+            'Definisce la tipologia standard di risposta automatica per una operazione sullo articolo',
         'Defines the default body of a note in the ticket free text screen of the agent interface.' =>
-            '',
+            'Definisce il testo standard per una nota nella interfaccia agente per i campi liberi',
         'Defines the default front-end (HTML) theme to be used by the agents and customers. If you like, you can add your own theme. Please refer the administrator manual located at http://doc.otrs.org/.' =>
             '',
         'Defines the default front-end language. All the possible values are determined by the available language files on the system (see the next setting).' =>
@@ -3311,25 +3311,25 @@ Nota: Questa tabella rappresenta l\'ordine di esecuzione delle ACL. Se è necess
         'Defines the default maximum number of search results shown on the overview page.' =>
             '',
         'Defines the default next state for a ticket after customer follow up in the customer interface.' =>
-            '',
+            'Definisce lo stato successivo di default per un ticket dopo una risposta cliente nella interfaccia utente',
         'Defines the default next state of a ticket after adding a note, in the close ticket screen of the agent interface.' =>
-            '',
+            'Definisce lo stato successivo di default per un ticket dopo una nota, nella schermata agente di chiusura ticket.',
         'Defines the default next state of a ticket after adding a note, in the ticket bulk screen of the agent interface.' =>
-            '',
+            'Definisce lo stato successivo di default per un ticket dopo una nota, nella schermata agente di azioni multimple.',
         'Defines the default next state of a ticket after adding a note, in the ticket free text screen of the agent interface.' =>
-            '',
+            'Definisce lo stato successivo di default per un ticket dopo una nota, nella schermata agente dei campi liberi.',
         'Defines the default next state of a ticket after adding a note, in the ticket note screen of the agent interface.' =>
-            '',
+            'Definisce lo stato successivo di default per un ticket dopo una nota, nella schermata agente del campo note.',
         'Defines the default next state of a ticket after adding a note, in the ticket owner screen of a zoomed ticket in the agent interface.' =>
-            '',
+            'Definisce lo stato successivo di default per un ticket dopo una nota, nella schermata agente dello agente intitolato.',
         'Defines the default next state of a ticket after adding a note, in the ticket pending screen of a zoomed ticket in the agent interface.' =>
-            '',
+            'Definisce lo stato successivo di default per un ticket dopo una nota, nella schermata agente dei ticket in attesa.',
         'Defines the default next state of a ticket after adding a note, in the ticket priority screen of a zoomed ticket in the agent interface.' =>
-            '',
+            'Definisce lo stato successivo di default per un ticket dopo una nota, nella schermata agente della priorita.',
         'Defines the default next state of a ticket after adding a note, in the ticket responsible screen of the agent interface.' =>
-            '',
+            'Definisce lo stato successivo di default per un ticket dopo una nota, nella schermata agente dello agente responsabile.',
         'Defines the default next state of a ticket after being bounced, in the ticket bounce screen of the agent interface.' =>
-            '',
+            'Definisce lo stato successivo di default per un ticket dopo che e stato rifiutato, nella schermata agente del rifiuto.',
         'Defines the default next state of a ticket after being forwarded, in the ticket forward screen of the agent interface.' =>
             '',
         'Defines the default next state of a ticket if it is composed / answered in the ticket compose screen of the agent interface.' =>
@@ -4074,16 +4074,16 @@ Nota: Questa tabella rappresenta l\'ordine di esecuzione delle ACL. Se è necess
             '',
         'It is possible to configure different themes, for example to distinguish between agents and customers, to be used on a per-domain basis within the application. Using a regular expression (regex), you can configure a Key/Content pair to match a domain. The value in "Key" should match the domain, and the value in "Content" should be a valid theme on your system. Please see the example entries for the proper form of the regex.' =>
             '',
-        'Lastname, Firstname' => '',
-        'Lastname, Firstname (UserLogin)' => '',
-        'Link agents to groups.' => '',
-        'Link agents to roles.' => '',
-        'Link attachments to templates.' => '',
-        'Link customer user to groups.' => '',
-        'Link customer user to services.' => '',
-        'Link queues to auto responses.' => '',
-        'Link roles to groups.' => '',
-        'Link templates to queues.' => '',
+        'Lastname, Firstname' => 'Cognome, Nome',
+        'Lastname, Firstname (UserLogin)' => 'Cognome, Nome (login utente)',
+        'Link agents to groups.' => 'Collega Agenti e gruppi.',
+        'Link agents to roles.' => 'Collega Agenti e ruoli.',
+        'Link attachments to templates.' => 'Collega allegati ai template.',
+        'Link customer user to groups.' => 'Collega utenti a gruppi.',
+        'Link customer user to services.' => 'Collega utenti a servizi.',
+        'Link queues to auto responses.' => 'Collega code a risposte automatiche.',
+        'Link roles to groups.' => 'Collega ruoli a gruppi',
+        'Link templates to queues.' => 'Collega template alle code.',
         'Links 2 tickets with a "Normal" type link.' => '',
         'Links 2 tickets with a "ParentChild" type link.' => '',
         'List of CSS files to always be loaded for the agent interface.' =>
@@ -4106,7 +4106,7 @@ Nota: Questa tabella rappresenta l\'ordine di esecuzione delle ACL. Se è necess
         'List of default Standard Templates which are assigned automatically to new Queues upon creation.' =>
             '',
         'Log file for the ticket counter.' => '',
-        'Mail Accounts' => '',
+        'Mail Accounts' => 'Account di posta',
         'Main menu registration.' => '',
         'Makes the application check the MX record of email addresses before sending an email or submitting a telephone or email ticket.' =>
             '',
@@ -4171,7 +4171,7 @@ Nota: Questa tabella rappresenta l\'ordine di esecuzione delle ACL. Se è necess
         'Module to show notifications and escalations (ShownMax: max. shown escalations, EscalationInMinutes: Show ticket which will escalation in, CacheTime: Cache of calculated escalations in seconds).' =>
             '',
         'Module to use database filter storage.' => '',
-        'Multiselect' => '',
+        'Multiselect' => 'Multiselezione',
         'My Tickets' => 'I miei ticket',
         'Name of custom queue. The custom queue is a queue selection of your preferred queues and can be selected in the preferences settings.' =>
             '',
@@ -4335,8 +4335,8 @@ Nota: Questa tabella rappresenta l\'ordine di esecuzione delle ACL. Se è necess
             '',
         'Send me a notification if a customer sends a follow up and I\'m the owner of the ticket or the ticket is unlocked and is in one of my subscribed queues.' =>
             '',
-        'Send notifications to users.' => '',
-        'Send ticket follow up notifications' => '',
+        'Send notifications to users.' => 'Invia le notifiche agli utenti.',
+        'Send ticket follow up notifications' => 'Invia le comunicazioniagli utenti',
         'Sender type for new tickets from the customer inteface.' => '',
         'Sends agent follow-up notification only to the owner, if a ticket is unlocked (the default is to send the notification to all agents).' =>
             '',
@@ -4538,8 +4538,8 @@ Nota: Questa tabella rappresenta l\'ordine di esecuzione delle ACL. Se è necess
             '',
         'Show article as rich text even if rich text writing is disabled.' =>
             '',
-        'Show the current owner in the customer interface.' => '',
-        'Show the current queue in the customer interface.' => '',
+        'Show the current owner in the customer interface.' => 'Mostra lo agente incaricato nella interfaccia utente.',
+        'Show the current queue in the customer interface.' => 'Mostra la coda corrente nella interfaccia utente.',
         'Shows a count of icons in the ticket zoom, if the article has attachments.' =>
             '',
         'Shows a link in the menu for subscribing / unsubscribing from a ticket in the ticket zoom view of the agent interface.' =>
@@ -4699,9 +4699,9 @@ Nota: Questa tabella rappresenta l\'ordine di esecuzione delle ACL. Se è necess
             '',
         'Shows time use complete description (days, hours, minutes), if set to "Yes"; or just first letter (d, h, m), if set to "No".' =>
             '',
-        'Skin' => '',
-        'SolutionDiffInMin' => '',
-        'SolutionInMin' => '',
+        'Skin' => 'Set di colori',
+        'SolutionDiffInMin' => 'Differenza in minuti rispetto alla soluzione.',
+        'SolutionInMin' => 'Minuti a disposizione per la soluzione',
         'Sorts the tickets (ascendingly or descendingly) when a single queue is selected in the queue view and after the tickets are sorted by priority. Values: 0 = ascending (oldest on top, default), 1 = descending (youngest on top). Use the QueueID for the key and 0 or 1 for value.' =>
             '',
         'Spam Assassin example setup. Ignores emails that are marked with SpamAssassin.' =>
@@ -4712,11 +4712,11 @@ Nota: Questa tabella rappresenta l\'ordine di esecuzione delle ACL. Se è necess
             '',
         'Specifies the available note types for this ticket mask. If the option is deselected, ArticleTypeDefault is used and the option is removed from the mask.' =>
             '',
-        'Specifies the background color of the chart.' => '',
-        'Specifies the background color of the picture.' => '',
-        'Specifies the border color of the chart.' => '',
-        'Specifies the border color of the legend.' => '',
-        'Specifies the bottom margin of the chart.' => '',
+        'Specifies the background color of the chart.' => 'Specifica il colore di sfondo del grafico.',
+        'Specifies the background color of the picture.' => 'Specifica il colore di sfondo della immagine.',
+        'Specifies the border color of the chart.' => 'Specifica il colore del bordo del grafico.',
+        'Specifies the border color of the legend.' => 'Specifica il colore del bordo della lagenda.',
+        'Specifies the bottom margin of the chart.' => 'Specifica il margine inferiore del grafico.',
         'Specifies the different article types that will be used in the system.' =>
             '',
         'Specifies the different note types that will be used in the system.' =>
@@ -4730,7 +4730,7 @@ Nota: Questa tabella rappresenta l\'ordine di esecuzione delle ACL. Se è necess
             '',
         'Specifies the group where the user needs rw permissions so that he can access the "SwitchToCustomer" feature.' =>
             '',
-        'Specifies the left margin of the chart.' => '',
+        'Specifies the left margin of the chart.' => 'Specifica il margine sinistro del grafico.',
         'Specifies the name that should be used by the application when sending notifications. The sender name is used to build the complete display name for the notification master (i.e. "OTRS Notification Master" otrs@your.example.com). Notifications are messages such as en::Customer::QueueUpdate or en::Agent::Move.' =>
             '',
         'Specifies the order in which the firstname and the lastname of agents will be displayed.' =>
@@ -4746,12 +4746,12 @@ Nota: Questa tabella rappresenta l\'ordine di esecuzione delle ACL. Se è necess
             '',
         'Specifies the path to the converter that allows the view of XML files, in the web interface.' =>
             '',
-        'Specifies the right margin of the chart.' => '',
-        'Specifies the text color of the chart (e. g. caption).' => '',
-        'Specifies the text color of the legend.' => '',
+        'Specifies the right margin of the chart.' => 'Specifica il margine destro del grafico.',
+        'Specifies the text color of the chart (e. g. caption).' => 'Specifica il colore del testo del grafico.',
+        'Specifies the text color of the legend.' => 'Specifica il colore del testo della legenda.',
         'Specifies the text that should appear in the log file to denote a CGI script entry.' =>
             '',
-        'Specifies the top margin of the chart.' => '',
+        'Specifies the top margin of the chart.' => 'Specifica il margine superiore del grafico.',
         'Specifies user id of the postmaster data base.' => '',
         'Specify how many sub directory levels to use when creating cache files. This should prevent too many cache files being in one directory.' =>
             '',
@@ -4762,12 +4762,12 @@ Nota: Questa tabella rappresenta l\'ordine di esecuzione delle ACL. Se è necess
         'Starts a wildcard search of the active object after the link object mask is started.' =>
             '',
         'Statistics' => 'Statistiche',
-        'Status view' => 'Vista di stato',
+        'Status view' => 'Vista per stato',
         'Stop words for fulltext index. These words will be removed.' => '',
         'Stores cookies after the browser has been closed.' => '',
         'Strips empty lines on the ticket preview in the queue view.' => '',
         'Templates <-> Queues' => '',
-        'Textarea' => '',
+        'Textarea' => 'Area di Testo',
         'The "bin/PostMasterMailAccount.pl" will reconnect to POP3/POP3S/IMAP/IMAPS host after the specified count of messages.' =>
             '',
         'The agent skin\'s InternalName which should be used in the agent interface. Please check the available skins in Frontend::Agent::Skins.' =>
@@ -4801,10 +4801,10 @@ Nota: Questa tabella rappresenta l\'ordine di esecuzione delle ACL. Se è necess
             '',
         'This option defines the dynamic field in which a Process Management process entity id is stored.' =>
             '',
-        'This option defines the process tickets default lock.' => '',
-        'This option defines the process tickets default priority.' => '',
-        'This option defines the process tickets default queue.' => '',
-        'This option defines the process tickets default state.' => '',
+        'This option defines the process tickets default lock.' => 'Questa opzione definisce per i ticket con annesso processo il blocco di default.',
+        'This option defines the process tickets default priority.' => 'Questa opzione definisce per i ticket con annesso processo la priorita di default.',
+        'This option defines the process tickets default queue.' => 'Questa opzione definisce per i ticket con annesso processo la coda di default.',
+        'This option defines the process tickets default state.' => 'Questa opzione definisce per i ticket con annesso processo lo stato di default.',
         'This setting allows you to override the built-in country list with your own list of countries. This is particularly handy if you just want to use a small select group of countries.' =>
             '',
         'Ticket Queue Overview' => '',
@@ -4828,8 +4828,8 @@ Nota: Questa tabella rappresenta l\'ordine di esecuzione delle ACL. Se è necess
         'Updates the ticket escalation index after a ticket attribute got updated.' =>
             '',
         'Updates the ticket index accelerator.' => '',
-        'UserFirstname' => '',
-        'UserLastname' => '',
+        'UserFirstname' => 'Nome Utente',
+        'UserLastname' => 'Cognome Utente',
         'Uses Cc recipients in reply Cc list on compose an email answer in the ticket compose screen of the agent interface.' =>
             '',
         'Uses richtext for viewing and editing: articles, salutations, signatures, standard templates, auto responses and notifications.' =>
@@ -4839,11 +4839,11 @@ Nota: Questa tabella rappresenta l\'ordine di esecuzione delle ACL. Se è necess
         'Wear this frontend skin' => 'Mantieni questa interfaccia',
         'Webservice path separator.' => 'Separatore percorsi dei WebService',
         'When tickets are merged, a note will be added automatically to the ticket which is no longer active. Here you can define the body of this note (this text cannot be changed by the agent).' =>
-            '',
+            'Quando i ticket sono uniti, una nota viene automaticamente aggiunta al ticket disattivato. Qui si definisce il corpo della nota, il cui contenuto non viene modificato dagli agenti.',
         'When tickets are merged, a note will be added automatically to the ticket which is no longer active. Here you can define the subject of this note (this subject cannot be changed by the agent).' =>
-            '',
+            'Quando i ticket sono uniti, una nota viene automaticamente aggiunta al ticket disattivato. Qui si definisce il corpo della nota, il cui contenuto non viene modificato dagli agenti.',
         'When tickets are merged, the customer can be informed per email by setting the check box "Inform Sender". In this text area, you can define a pre-formatted text which can later be modified by the agents.' =>
-            '',
+            'Quando i ticket sono uniti, lo utente puo essere informato via email abilitanto il riquadro "Informa Utente". In questo testo potete definire un testo pre-formattato modificabile dagli agenti.',
         'Your queue selection of your favorite queues. You also get notified about those queues via email if enabled.' =>
             'La vostra selezione delle code preferite. Se attivato, sarete anche notificati delle modifiche su questa coda',
 
